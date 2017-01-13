@@ -127,7 +127,7 @@ tl = np.reshape(tl, (55000, 10))
 vi = np.reshape(vi, (5000, 784))
 vl = np.reshape(vl, (5000, 10))
 
-for i in range(1, 300):
+for i in range(1, 1000):
 	q = random.randrange(1, 550)	
 	x_total = ti[100*(q-1):(100*q)]
 	y_total = tl[100*(q-1):(100*q)]
