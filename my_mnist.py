@@ -118,11 +118,6 @@ def tanh_W(W):
 
 def tanh_b(b):
 	return cross_entropy(W, b)
-	
-
-def tanh(x):
-	y = np.exp(-x)
-	return (1.0 - y) / (1.0 + y)
 
 vi, vl, ti, tl = read_data_sets('/MNIST_data/', one_hot=True)
 W = np.zeros((784, 10))
